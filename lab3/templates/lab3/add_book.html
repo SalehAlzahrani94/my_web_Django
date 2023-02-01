@@ -1,0 +1,17 @@
+{% extends 'lab3/base.html' %}
+
+{%block title%}
+{% endblock %}
+
+{% block content %}
+<div class=" add_a_book" >
+  <h2 class="Add_book">Add a book you recommend:</h2>
+  <form method="POST" action="" enctype="multipart/form-data">
+
+      {% csrf_token %}
+      {{ form.as_p }}
+      
+      <input type="submit" value="Add new Book"  class="btn btn-primary"/>
+  </form>
+</div>
+{%endblock%}
