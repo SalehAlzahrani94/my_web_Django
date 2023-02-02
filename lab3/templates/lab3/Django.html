@@ -1,0 +1,56 @@
+{% extends 'lab3/base.html' %}
+{% load static %}
+{%block title%}
+{% endblock %}
+{% block content %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+</head>
+<body >
+ 
+<div id="accordion" style="width: 170px; "   >
+    <h3> webside source</h3>
+  <div>
+    <p>
+        <div class="tic_tac_toe"  >
+            <div class="Tic_Tac_Toe_div">
+             
+                <img src="{% static 'lab3/images/see_me_tic.png' %}" alt="My image" style="margin-left: 150px;">
+                <br/><br/><br/>                   
+                <p style="padding-left: 120px;"> " this webside using Django framework , you can look it up "</p>       : 
+                
+                <br/>
+            
+                <a href="https://github.com/SalehAlzahrani94/my_web_Django" target="_blank" style="margin-left: 700px; color: brown;" > <strong> Press here to view source</strong> </a>
+        </div>
+                
+        </div>
+    </p>
+  </div>
+
+
+    
+</div>
+
+</p> 
+ 
+</body>
+</html>
+
+
+
+{%endblock%}

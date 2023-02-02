@@ -14,7 +14,7 @@ path("added",views.book_added,name="added"),
 path("Games",views.Games,name="Games"),
 path("AI",views.AI,name="AI"),
 path("academic_marks",views.academic_marks,name="academic_marks"),
-path("search",views.search,name="search_par"),
+#path("search",views.search,name="search_par"),
 
 
 ]

@@ -10,7 +10,7 @@ def home_pa(requst):
     home_pa: str="Welcom to my webside"
     return render(requst,"lab3/enter.html",{"welcome":home_pa} )
 def about_us(requst):
-    about_us: str="I'm AOU student in CS \n in Dean's list for academic perfomance twice "
+    about_us: str=" I'm AOU student in CS \n in Dean's list for academic perfomance twice "
     return render(requst,"lab3/about.html",{"info":about_us} )
 
 # Create your views here.
