@@ -46,3 +46,6 @@ def academic_marks(request : HttpRequest):
 
 def search(request : HttpRequest):
         return render( request, 'lab3/search.html')
+
+def Django(request : HttpRequest):
+        return render( request, 'lab3/Django.html')

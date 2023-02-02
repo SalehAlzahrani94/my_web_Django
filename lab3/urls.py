@@ -14,6 +14,7 @@ path("added",views.book_added,name="added"),
 path("Games",views.Games,name="Games"),
 path("AI",views.AI,name="AI"),
 path("academic_marks",views.academic_marks,name="academic_marks"),
+path("Django",views.Django,name="Django"),
 #path("search",views.search,name="search_par"),
 
 
