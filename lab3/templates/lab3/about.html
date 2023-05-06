@@ -1,0 +1,163 @@
+{% extends 'lab3/base.html' %}
+{% load static %}
+
+{% block  title%}
+   
+
+{%endblock%}
+
+{%block content%}
+<br/>
+
+<h1 style="color:aliceblue; position:relative; padding-left: 300px;"> Welcom to my webside </h1>
+<h2 style="color:aliceblue; position:relative; padding-left: 450px;"> About me  </h2>
+<br/><br/>
+<div class="grid-container" >
+  
+
+
+  
+
+  <div class="grid-item">
+  <div class="card" style="width: 18rem; display:inline-block">
+
+    <img class="card-img-top" style ="object-fit: fill; height: 195px;"    src=" {% static 'photos/image.jpg' %}"  alt="file no found">
+
+    <div class="card-body" style="height: 237px" >
+      <h5 class="card-title">AOU student</5>
+      <p class="card-text" style=" margin-top: 5px; font-weight: normal; ">{{info}}</p>
+      
+      <a href="http://127.0.0.1:8000/academic_marks" class="btn btn-primary" style="margin: 61px 0px 0px 73px;">View my perfomance </a>
+      <br>
+      
+
+    </div> 
+
+  </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="card" style="width: 18rem; display:inline-block">
+  
+      <img class="card-img-top" style ="object-fit: fill; height: 195px;"    src=" {% static 'photos/Petroleum_and_Minerals_AI_KAUST.png' %}"  alt="file no found">
+  
+      <div class="card-body" style="height: 237px" >
+        <h5 class="card-title">KAUST Academy AI   </5>
+        <p class="card-text" style=" margin-top: 5px; font-weight: normal; "> King Fahd University of Petroleum and Minerals (KFUPM) AI KAUST </p>
+        
+        <a href="http://www.kfupm.edu.sa/Default.aspx" class="btn btn-primary" style="margin: 61px 0px 0px 140px;">View kfupm</a>
+        <br>
+        
+  
+      </div> 
+  
+    </div>
+    </div>
+  
+
+    <div class="grid-item">
+      <div class="card" style="width: 18rem; display:inline-block">
+    
+        <img class="card-img-top"src=" {% static 'photos/AI_google.png' %}"  alt="file no found">
+    
+        <div class="card-body" style="height: 237px" >
+          <h5 class="card-title"> intensive AI & database </h5>
+          <p class="card-text">  intensive course with Google Growth initiative in artificial intelligence and the database , 10 hours</p>
+          
+          <a href=https://developers.google.com/community/gdsc class="btn btn-primary" style="margin: 59px 0px 0px 105px">Visit google club</a>
+          <br>
+          
+    
+        </div> 
+    
+      </div>
+      </div>
+
+
+  <div class="grid-item">
+  <div class="card" style="width: 18rem; display:inline-block    ">
+
+    <img class="card-img-top"src=" {% static 'lab3/images/web_development_with_python.png' %}"  alt="file no found">
+
+    <div class="card-body" style="height: 237px">
+      <h5 class="card-title">Web Development With Python</h5>
+      <p class="card-text">  high-level Python web framework that enables rapid development of secure and maintainable websites , 25 hours  </p>
+      
+      <a href="https://bootcamp.sa/tuwaiq1000" class="btn btn-primary"  style="margin: 10px 0px 0px 70px";>Visit Tuwaiq Academy</a>
+      <br>
+      
+
+    </div> 
+
+  </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="card" style="width: 18rem; display:inline-block">
+  
+      <img class="card-img-top" style ="object-fit: fill; height: 195px;"    src=" {% static 'photos/AI_apps.jpg' %}"  alt="file no found">
+  
+      <div class="card-body" style="height: 237px" >
+        <h5 class="card-title">AI Applications </5>
+        <p class="card-text" style=" margin-top: 5px; font-weight: normal; ">Applications of social intelligence and employment in projects</p>
+        
+        <a href="https://attaa.sa/" class="btn btn-primary" style="margin: 61px 0px 0px 100px;">View attaa Digital </a>
+        <br>
+        
+  
+      </div> 
+  
+    </div>
+    </div>
+
+    <div class="grid-item" style="margin: 15px 0px 0px 0px">
+
+      <div class="card" style="width: 18rem; display:inline-block">
+    
+        <img class="card-img-top" style=" height: 195px;" src="{% static 'photos/Python.png' %}"  alt="file no found">
+    
+        <div class="card-body" style="height: 235px" >
+          <h5 class="card-title"> Python </h5>
+          <p class="card-text">  programming language  , 5 hours</p>
+          
+          <a href="https://www.kaggle.com" class="btn btn-primary" style="margin: 107px 0px 0px 145px">Visit kaggle</a>
+          <br>
+          
+    
+        </div> 
+    
+      </div>
+    </div>
+
+  <div class="grid-item">
+
+  <div class="card" style="width: 18rem; display:inline-block">
+
+    <img class="card-img-top"src=" {% static 'lab3/images/JavaScript.jpg' %}"  alt="file no found">
+
+    <div class="card-body" style="height: 237px">
+      <h5 class="card-title"> Java script</h5>
+      <p class="card-text">  lightweight, interpreted, or just-in-time compiled programming language with first-class functions, two days  </p>
+      
+      <a href="https://attaa.sa/" class="btn btn-primary" style="margin: 34px 0px 0px 105px" >Visit Attaa Digital</a>
+      <br>
+      
+
+    </div> 
+
+  </div>
+  </div>
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+{%endblock%}

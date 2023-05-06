@@ -1,0 +1,33 @@
+{% extends 'lab3/base.html' %}
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<h1 style="position: relative; color: aliceblue;">Welcom to our Library !</h1><br/>
+<br/>
+
+<h2 class="sub-heder">List of Books</h2>
+{% for i in books %}
+
+
+  <div class="card" style="width: 18rem;">
+    {% if i.image %}
+    <img class="card-img-top"src=" {{ i.image.url }}">
+    {% endif %}     
+    <div class="card-body">
+      <h5 class="card-title">{{i.title}}</h5>
+      <p class="card-text">{{i.description}}</p>
+      <p class="card-text">{{i.created_at}}</p>
+      <a href="https://www.jarir.com/sa-en/english-children-preschool-1-5.html" class="btn btn-primary" style="margin-left: 180px;"> Pay</a>
+      <br>
+      
+  
+    </div> 
+  </div>
+  <br/>
+ 
+{% endfor %}
+
+
+
+{% endblock %}

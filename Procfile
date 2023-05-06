@@ -1,0 +1,1 @@
+web: gunicorn third_day.wsgi

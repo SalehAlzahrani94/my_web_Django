@@ -1,0 +1,189 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <title>
+      {% block title %} {% endblock %}
+    </title>
+
+    <style>
+      .slid{
+        color: blue; 
+        background-color: yellowgreen;       
+      }
+      .card-body{
+        background-image:url("/static/photos/Card_backgournd.png") ;
+        background-size: 250px;
+        
+      }  
+      .image{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding:300px;
+        width: 150px;
+       
+      }
+      .phot{
+        height:150px;
+        width:238px;
+        border-radius: 6px;
+        
+      }
+      label {
+          display: block;
+          color : gray;
+        }
+      .btn btn-primary{
+        padding-right: 50px;
+      }
+      .back {
+          background-image:url("/static/photos/pho.jpg") ;
+          background-size:100%;
+          background-repeat: no-repeat;
+          position: fixed;
+          height: 100vh;
+          width:100vw; 
+        }
+      .add_a_book{
+        position:absolute;
+      }
+      .thanks{
+        position:absolute;
+      }
+      .tic_tac_toe{
+        position:absolute;
+      }
+      
+      .Tic_Tac_Toe_div{
+        background-color: rgb(180, 182, 172);
+        margin: 50px 150px 50px 50px;
+      }
+      .Minesweeper{
+        background-color: rgb(129, 125, 125);
+        margin: 50px 150px 50px 50px;      }
+      .Add_book {
+        color:white;
+      }  
+      h2,h1{
+        color:white;
+      }
+      .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 450px; 
+        object-fit: fill;
+
+      }
+      .search_buttton{
+        border-radius: 2px;
+        transition-duration: 0.4s;
+        width: 100px;
+        height: 45px;
+        appearance: none;
+        background-color: #FFFFFF;
+        border-radius: 40em;
+        border-style: none;
+        box-shadow: #ADCFFF 0 -12px 6px inset;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system,sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: -.24px;
+        margin-left: 5px;
+        outline: none;
+        
+        quotes: auto;
+        text-align:left;
+        text-decoration: none;
+        transition: all .15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+}
+
+.search_buttton:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.search_buttton:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .search_buttton {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+      
+    
+    </style>
+    
+
+  </head>
+
+
+
+  <body>
+    <div class="back"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
+      <div class="container-xl">
+        <p class="navbar-brand" style="margin-bottom: 0px;">Saleh Alzahrani</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/home/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8000/adding/">add book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8000">view books</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">previous codes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="http://127.0.0.1:8000/AI">AI</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:8000/Django">Django framework</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:8000/Games">Games</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form role="search" style="display:flex;" method="POST" >
+
+            {% csrf_token %}
+
+            <input class="form-control"  type="search" placeholder="Search" aria-label="Search"> 
+            <button class="search_buttton" style="padding: 0px 10px 1px 4px;">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      {% block content %}
+
+      {% endblock %}
+    </div>
+  </body>
+</html>
+
+
+
